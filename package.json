@@ -1,6 +1,6 @@
 {
   "name": "@oakheart/ps-tools-node",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Javascript tooling setup",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "test": "jest"
   },
   "bin": {
-    "ps-tools": "./bin/ps-tools-node.js"
+    "ps-tools-node": "./bin/ps-tools-node.js"
   },
   "author": "Mike Quinn",
   "repository": {
