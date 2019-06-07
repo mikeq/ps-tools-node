@@ -7,18 +7,18 @@ C:\Users\123456\projects
 λ cd myproject
 C:\Users\123456\projects\myproject
 λ git init
-λ yarn add --dev @oakheart/ps-tools
+λ yarn add --dev @oakheart/ps-tools-node
 ```
 
 ## Display Help
 
 ```
 C:\Users\123456\projects\myproject
-λ node_modules\.bin\ps-tools -h
-Usage: ps-tools.js <command> [options]
+λ node_modules\.bin\ps-tools-node -h
+Usage: ps-tools-node.js <command> [options]
 
 Commands:
-  ps-tools.js init  Initialise the javascript tooling
+  ps-tools-node.js init  Initialise the javascript tooling
 
 Options:
   --version    Show version number
@@ -29,22 +29,20 @@ Options:
 
 ```
 C:\Users\123456\projects\myproject
-λ node_modules\.bin\ps-tools init
+λ node_modules\.bin\ps-tools-node init
 ```
 
 ### What it does
 
-This script sets up your project environment with everything required for linting, formatting and testing of your Javascript project (NodeJS or React).
+This script sets up your project environment with everything required for linting, formatting and testing of your Javascript project (NodeJS).
 
 It will install these npm packages
 
 - eslint
 - prettier
 - jest
-- enzyme
 - eslint-config-prettier
 - eslint-plugin-prettier
-- eslint-plugin-react
 - husky
 - lint-staged
 

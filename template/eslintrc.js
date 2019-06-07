@@ -6,11 +6,7 @@ module.exports = {
       jest: true,
       browser: true,
     },
-    extends: [
-      'eslint:recommended',
-      'plugin:react/recommended',
-      'plugin:prettier/recommended',
-    ],
+    extends: ['eslint:recommended', 'plugin:prettier/recommended'],
     parserOptions: {
       ecmaVersion: 2018,
       sourceType: 'module',
@@ -18,7 +14,6 @@ module.exports = {
         jsx: true,
       },
     },
-    plugins: ['react'],
     rules: {
       'no-console': 'warn',
     },

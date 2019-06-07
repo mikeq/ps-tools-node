@@ -1,5 +1,5 @@
 {
-  "name": "@oakheart/ps-tools",
+  "name": "@oakheart/ps-tools-node",
   "version": "1.0.7",
   "description": "Javascript tooling setup",
   "main": "index.js",
@@ -11,28 +11,24 @@
     "test": "jest"
   },
   "bin": {
-    "ps-tools": "./bin/ps-tools.js"
+    "ps-tools": "./bin/ps-tools-node.js"
   },
   "author": "Mike Quinn",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikeq/ps-tools.git"
+    "url": "https://github.com/mikeq/ps-tools-node.git"
   },
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.1",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "eslint": "^5.3.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.10.0",
-    "husky": "^0.14.3",
-    "jest": "^23.4.2",
-    "lint-staged": "^7.2.0",
-    "prettier": "^1.14.0",
-    "react-testing-library": "^5.2.3",
-    "yargs": "^12.0.1"
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "^2.4.0",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.2.0",
+    "prettier": "^1.18.2",
+    "yargs": "^13.2.4"
   },
   "lint-staged": {
     "*.{js,jsx,json,css,md}": [
