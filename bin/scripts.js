@@ -5,7 +5,7 @@ import chalk from 'chalk';
 const file = fs.readFileSync('./package.json');
 const code = JSON.parse(file.toString());
 
-console.log(chalk.yellow('Adding scripts to package.json...'));
+console.info(chalk.yellow('Adding scripts to package.json...'));
 const newScripts = {
   eslint_check:
     'eslint --print-config .eslintrc.json | eslint-config-prettier-check',
@@ -13,6 +13,7 @@ const newScripts = {
   lint: 'eslint --color .',
   ...code.scripts,
   test: 'jest',
+  postinstall: 'husky install',
 };
 
 code['lint-staged'] = {
@@ -25,4 +26,4 @@ code['husky'] = {
 
 code.scripts = newScripts;
 fs.writeFileSync('./package.json', JSON.stringify(code, null, 2));
-console.log(chalk.green('Scripts added to package.json'));
+console.info(chalk.green('Scripts added to package.json'));

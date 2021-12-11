@@ -4,6 +4,6 @@ import chalk from 'chalk';
 
 import { prettier } from '../template/prettierrc.js';
 
-console.log(chalk.yellow('Creating Prettier rc file...'));
+console.info(chalk.yellow('Creating Prettier rc file...'));
 fs.writeFileSync('.prettierrc', JSON.stringify(prettier, null, 2));
-console.log(chalk.green('Prettier rc file created.'));
+console.info(chalk.green('Prettier rc file created.'));
