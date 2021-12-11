@@ -1,6 +1,6 @@
-module.exports = {
-  prettier: {
-    singleQuote: true,
-    trailingComma: 'all',
-  },
+const prettier = {
+  singleQuote: true,
+  trailingComma: 'all',
 };
+
+export { prettier };

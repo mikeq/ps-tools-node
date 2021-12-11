@@ -1,8 +1,9 @@
 #! /usr/bin/env node
-const fs = require('fs');
-const chalk = require('chalk');
+import fs from 'fs';
+import chalk from 'chalk';
+
+import { eslint } from '../template/eslintrc.js';
 
 console.log(chalk.yellow('Creating ESLint rc file...'));
-const { eslint } = require('../template/eslintrc');
 fs.writeFileSync('.eslintrc.json', JSON.stringify(eslint, null, 2));
 console.log(chalk.green('ESLint rc file created.'));

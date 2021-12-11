@@ -1,8 +1,9 @@
 {
   "name": "@oakheart/ps-tools-node",
-  "version": "1.0.9",
+  "version": "2.0.0",
   "description": "Javascript tooling setup",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "eslint_check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "prettier": "prettier --write *.{js,jsx,json,css,md}",
@@ -19,15 +20,15 @@
   },
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.1",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "husky": "^2.4.0",
-    "jest": "^24.8.0",
-    "lint-staged": "^8.2.0",
-    "prettier": "^1.18.2",
-    "yargs": "^13.2.4"
+    "chalk": "^5.0.0",
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.4",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.1",
+    "yargs": "^17.3.0"
   },
   "lint-staged": {
     "*.{js,jsx,json,css,md}": [

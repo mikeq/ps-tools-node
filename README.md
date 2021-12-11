@@ -1,5 +1,9 @@
 # Javascript tooling
 
+## Which Version?
+
+if using Node < 15 then use version `@1.0.9`, for Node >= 15.0.0 use version `@2.0.0`
+
 ## Install as development dependency
 
 ```
@@ -7,7 +11,7 @@ C:\Users\123456\projects
 λ cd myproject
 C:\Users\123456\projects\myproject
 λ git init
-λ yarn add --dev @oakheart/ps-tools-node
+λ yarn add -D @oakheart/ps-tools-node@2.0.0
 ```
 
 ## Display Help
