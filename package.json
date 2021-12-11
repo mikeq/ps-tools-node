@@ -1,6 +1,6 @@
 {
   "name": "@oakheart/ps-tools-node",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Javascript tooling setup",
   "main": "index.js",
   "type": "module",
@@ -8,8 +8,7 @@
     "eslint_check": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
     "prettier": "prettier --write *.{js,jsx,json,css,md}",
     "lint": "eslint --color .",
-    "test": "jest",
-    "postinstall": "husky install"
+    "test": "jest"
   },
   "bin": {
     "ps-tools-node": "./bin/ps-tools-node.js"
